@@ -28,10 +28,10 @@
             }
             Console.WriteLine(new string('=', 20));
 
-            PathStorage.SavePathToFile(myPath, "PathStorage.txt");
+            PathStorage.SavePathToFile(myPath, "..\\..\\PathInput.txt");
             Console.WriteLine(new string('=', 20));
 
-            Path anotherPath = PathStorage.LoadPathFromFile("PathStorage2.txt");
+            Path anotherPath = PathStorage.LoadPathFromFile("..\\..\\PathOutput.txt");
             foreach (var pointInPath in anotherPath.points)
             {
                 Console.WriteLine(pointInPath);
