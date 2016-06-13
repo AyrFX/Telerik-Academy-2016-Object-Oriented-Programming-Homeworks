@@ -3,6 +3,14 @@
     using System;
 
     public class GenericList<T>
+        where T:
+          struct,
+          IComparable,
+          IComparable<T>,
+          IConvertible,
+          IEquatable<T>,
+          IFormattable
+
     {
         private T[] values;
         private int lastIndex;
@@ -111,6 +119,32 @@
                 }
             }
             return result;
+        }
+
+        public T Min()
+        {
+            T minValue = this.values[0];
+            for (int i = 1; i <= lastIndex; i++)
+            {
+                if (this.values[i].CompareTo(minValue) < 0)
+                {
+                    minValue = this.values[i];
+                }
+            }
+            return minValue;
+        }
+
+        public T Max()
+        {
+            T maxValue = this.values[0];
+            for (int i = 1; i <= lastIndex; i++)
+            {
+                if (this.values[i].CompareTo(maxValue) > 0)
+                {
+                    maxValue = this.values[i];
+                }
+            }
+            return maxValue;
         }
     }
 }

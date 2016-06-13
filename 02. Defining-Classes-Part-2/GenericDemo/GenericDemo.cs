@@ -13,25 +13,31 @@
             list.AddItem(12);
             list.AddItem(16);
             list.AddItem(21);
-            Console.WriteLine(list.ToString());
+            Console.WriteLine("Initial list: " + list.ToString());
             Console.WriteLine(new string('=', 21));
 
             list.RemoveElement(3);
-            Console.WriteLine(list.ToString());
+            Console.WriteLine("Element at index 3 removed: " + list.ToString());
             Console.WriteLine(new string('=', 21));
 
-            Console.WriteLine(list.GetElement(4));
+            Console.WriteLine("Element at index 4: " + list.GetElement(4));
             Console.WriteLine(new string('=', 21));
 
             list.InsertElement(12, 3);
-            Console.WriteLine(list.ToString());
+            Console.WriteLine("Element 12 inserted at index 3: " + list.ToString());
             Console.WriteLine(new string('=', 21));
 
-            Console.WriteLine(list.GetIndex(4));
+            Console.WriteLine("Index of element with value 4: " + list.GetIndex(4));
+            Console.WriteLine(new string('=', 21));
+
+            Console.WriteLine("Min value: " + list.Min());
+            Console.WriteLine(new string('=', 21));
+
+            Console.WriteLine("Max value: " + list.Max());
             Console.WriteLine(new string('=', 21));
 
             list.ClearList();
-            Console.WriteLine(list.ToString());
+            Console.WriteLine("Cleared list: " + list.ToString());
             Console.WriteLine(new string('=', 21));
         }
     }
