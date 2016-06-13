@@ -82,7 +82,7 @@
             {
                 for (int j = 0; j < newMatrix.GetLength(1); j++)
                 {
-                    newMatrix[i, j] = aNumber[i, j] + bNumber[i, j];
+                    newMatrix[i, j] = (dynamic)aNumber[i, j] + (dynamic)bNumber[i, j];
                 }
             }
             return newMatrix;
