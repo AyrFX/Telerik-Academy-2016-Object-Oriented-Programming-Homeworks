@@ -87,5 +87,43 @@
             }
             return newMatrix;
         }
+
+        public static Matrix<T> operator -(Matrix<T> aNumber, Matrix<T> bNumber)
+        {
+            if (aNumber.GetLength(0) != bNumber.GetLength(0) || aNumber.GetLength(1) != bNumber.GetLength(1))
+            {
+                throw new ArgumentException("The matrices should be the same size!");
+            }
+            Matrix<T> newMatrix = new Matrix<T>(aNumber.GetLength(0), aNumber.GetLength(1));
+            for (int i = 0; i < newMatrix.GetLength(1); i++)
+            {
+                for (int j = 0; j < newMatrix.GetLength(1); j++)
+                {
+                    newMatrix[i, j] = (dynamic)aNumber[i, j] - (dynamic)bNumber[i, j];
+                }
+            }
+            return newMatrix;
+        }
+
+        public static Matrix<T> operator *(Matrix<T> aNumber, Matrix<T> bNumber)
+        {
+            Matrix<T> newMatrix = new Matrix<T>(aNumber.GetLength(0), bNumber.GetLength(1));
+            for (int aNumberRow = 0; aNumberRow < aNumber.GetLength(0); aNumberRow++)
+            {
+                for (int bNumberCol = 0; bNumberCol < bNumber.GetLength(1); bNumberCol++)
+                {
+                    T currentElement = (dynamic)0;
+                    for (int i = 0; i < aNumber.GetLength(1); i++)
+                    {
+                        if (i < aNumber.GetLength(1) && i < bNumber.GetLength(0))
+                        {
+                            currentElement += (dynamic)aNumber[aNumberRow, i] * (dynamic)bNumber[i, bNumberCol];
+                        }
+                    }
+                    newMatrix[aNumberRow, bNumberCol] = currentElement;
+                }
+            }
+            return newMatrix;
+        }
     }
 }
