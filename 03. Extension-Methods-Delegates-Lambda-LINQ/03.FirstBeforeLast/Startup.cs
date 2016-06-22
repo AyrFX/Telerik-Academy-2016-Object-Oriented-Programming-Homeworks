@@ -7,7 +7,7 @@
     {
         static void Main()
         {
-            Student[] studentsList = new Student[] {
+            Student[] studentsList = {
             new Student("Pesho", "Goshov"),
             new Student("Gosho", "Moshev"),
             new Student("Veso", "Peshev"),

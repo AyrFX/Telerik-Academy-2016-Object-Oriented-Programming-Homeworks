@@ -9,7 +9,7 @@
         {
             int index = 3;
             int count = 7;
-            StringBuilder someSB = new StringBuilder();
+            var someSB = new StringBuilder();
             someSB.Append("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
             Console.WriteLine(someSB.Substring(index, count));
         }

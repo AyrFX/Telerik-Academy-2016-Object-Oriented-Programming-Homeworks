@@ -7,7 +7,7 @@
     {
         static void Main()
         {
-            List<int> someCollection = new List<int>();
+            var someCollection = new List<int>();
             someCollection.Add(7);
             someCollection.Add(3);
             someCollection.Add(4);
