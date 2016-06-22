@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.OrderStudents", "05.Orde
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.Divisible", "06.Divisible\06.Divisible.csproj", "{E3E3F410-5407-4BCA-8A80-73792D84545D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.StudentGroups", "09.StudentGroups\09.StudentGroups.csproj", "{EA4401E0-C11E-47AA-89BE-B02E0589F7A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-15.StudentGroups", "09.StudentGroups\09-15.StudentGroups.csproj", "{EA4401E0-C11E-47AA-89BE-B02E0589F7A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

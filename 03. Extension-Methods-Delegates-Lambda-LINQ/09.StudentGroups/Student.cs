@@ -23,7 +23,7 @@
             this.Marks = marks;
         }
 
-        public string ToString()
+        public override string ToString()
         {
             string result = this.FirstName + " " + this.LastName + ", faculty Number: " +
                 this.FacultyNumber + ", Group: " + this.GroupNumber + ", Phone: " +
