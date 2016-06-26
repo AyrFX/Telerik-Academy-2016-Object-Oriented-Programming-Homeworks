@@ -6,8 +6,8 @@
     {
         static void Main()
         {
-            Customer individualCustomer = new Customer(CustomerType.Individual, "Pesho Goshev");
-            Customer companyCustomer = new Customer(CustomerType.Company, "Some company");
+            var individualCustomer = new Customer(CustomerType.Individual, "Pesho Goshev");
+            var companyCustomer = new Customer(CustomerType.Company, "Some company");
 
             Account[] individualAccounts =
             {
