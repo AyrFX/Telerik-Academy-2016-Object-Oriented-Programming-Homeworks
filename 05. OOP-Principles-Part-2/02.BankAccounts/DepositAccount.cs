@@ -2,7 +2,7 @@
 {
     using System;
 
-    class DepositAccount : Account
+    class DepositAccount : Account, IWithdrawable
     {
         //Constructor
         public DepositAccount(Customer customer, decimal initialBalance, decimal interestRate)

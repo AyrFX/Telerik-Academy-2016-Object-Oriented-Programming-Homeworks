@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Shapes", "01.Shapes\01.Shapes.csproj", "{F970501D-DCEC-4A46-BE2F-F537562A1175}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccounts", "02.BankAccounts\BankAccounts.csproj", "{0E4F0348-B479-499A-9566-37853644ABD2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.BankAccounts", "02.BankAccounts\02.BankAccounts.csproj", "{0E4F0348-B479-499A-9566-37853644ABD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,7 +1,7 @@
 ﻿namespace BankAccounts
 {
     using System;
-    class Account
+    abstract class Account
     {
         //Fields
         protected Customer AccountCustomer { get; set; }
@@ -9,7 +9,7 @@
         protected decimal InterestRate { get; set; }
 
         //Constructors
-        public Account(Customer customer, decimal initialBalance, decimal interestRate)
+        protected Account(Customer customer, decimal initialBalance, decimal interestRate)
         {
             this.AccountCustomer = customer;
             this.Balance = initialBalance;
