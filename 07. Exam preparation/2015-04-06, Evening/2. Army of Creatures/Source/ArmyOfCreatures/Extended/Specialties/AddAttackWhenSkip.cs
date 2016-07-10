@@ -1,14 +1,14 @@
 ﻿namespace ArmyOfCreatures.Extended.Specialties
 {
-	using System;
-	using System.Globalization;
-	
-	using ArmyOfCreatures.Logic.Battles;
-	using ArmyOfCreatures.Logic.Specialties;
-	
-	public class AddAttackWhenSkip: Specialty
-	{
-		private readonly int attackToAdd;
+    using System;
+    using System.Globalization;
+    
+    using ArmyOfCreatures.Logic.Battles;
+    using ArmyOfCreatures.Logic.Specialties;
+    
+    public class AddAttackWhenSkip: Specialty
+    {
+        private int attackToAdd;
 
         public AddAttackWhenSkip(int attackToAdd)
         {
@@ -28,12 +28,13 @@
             }
 
             //skipCreature.PermanentDefense += this.attackToAdd;
-            skipCreature.CurrentAttack += this.attackToAdd;
+            //skipCreature.CurrentAttack += this.attackToAdd;
+            skipCreature.PermanentAttack += this.attackToAdd;
         }
 
         public override string ToString()
         {
             return string.Format(CultureInfo.InvariantCulture, "{0}({1})", base.ToString(), this.attackToAdd);
         }
-	}
+    }
 }
