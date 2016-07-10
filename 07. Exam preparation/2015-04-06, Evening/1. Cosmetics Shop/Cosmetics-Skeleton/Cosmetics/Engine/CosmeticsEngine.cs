@@ -8,6 +8,7 @@
     using Cosmetics.Common;
     using Cosmetics.Contracts;
     using Cosmetics.Products;
+    using Cosmetics.ShoppingCart;
 
     public sealed class CosmeticsEngine : IEngine
     {
