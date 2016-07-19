@@ -250,3 +250,5 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+/07. Exam preparation/2015-03-05/1. Furniture/*.zip
+/07. Exam preparation/2014-03-05/1. Furniture/*.zip
